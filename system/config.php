@@ -14,12 +14,12 @@ define( 'PATH',$path );
 define( 'DB_HOST','localhost' );
 define( 'DB_USER','root' );
 define( 'DB_DBNAME','test' );
-define( 'DB_PASS','321321' );
+define( 'DB_PASS','1234' );
 
-/*DEFINI«’ES MENU TOPO*/
+/*DEFINI√á√ïES MENU TOPO*/
 $menu_topo = array(
 		array('link'=>PATH.'usuario/home','titulo'=>'Home'),
-		array('link'=>PATH.'usuario/cadastrar','titulo'=>utf8_encode('Usu·rios'))
+		array('link'=>PATH.'usuario/cadastrar','titulo'=>utf8_encode('Usu√°rios'))
 );
 
 define( 'MENU_TOPO',serialize($menu_topo) );
