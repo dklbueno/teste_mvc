@@ -1,0 +1,381 @@
+::selection{ background-color: #E13300; color: white; }
+::moz-selection{ background-color: #E13300; color: white; }
+::webkit-selection{ background-color: #E13300; color: white; }
+
+body {
+	background-color: #fff;	
+	font: 13px/20px normal Helvetica, Arial, sans-serif;
+	color: #4F5155;	
+}
+
+body,html{
+	height:100%;
+	margin: 0px;
+	padding:0;
+}
+
+a {
+	color: #003399;
+	background-color: transparent;
+	font-weight: normal;
+}
+
+h1 {
+	color: #444;
+	background-color: transparent;
+	border-bottom: 1px solid #D0D0D0;
+	font-size: 19px;
+	font-weight: normal;
+	margin: 0 0 14px 0;
+	padding: 14px 15px 10px 15px;
+}
+
+code {
+	font-family: Consolas, Monaco, Courier New, Courier, monospace;
+	font-size: 12px;
+	background-color: #f9f9f9;
+	border: 1px solid #D0D0D0;
+	color: #002166;
+	display: block;
+	margin: 14px 0 14px 0;
+	padding: 12px 10px 12px 10px;
+}
+
+#body{
+	margin: 0 15px 0 15px;
+}
+
+p.footer{
+	text-align: right;
+	font-size: 11px;
+	border-top: 1px solid #D0D0D0;
+	line-height: 32px;
+	padding: 0 10px 0 10px;
+	margin: 20px 0 0 0;
+}
+
+#container{
+	margin: 10px;
+	/*border: 1px solid #D0D0D0;
+	-webkit-box-shadow: 0 0 8px #D0D0D0;*/
+}
+
+#container h2{
+	margin:10px 0 10px 0;
+	text-align:center;
+	color:#2e426a
+}
+
+.login{
+	width:300px;
+	margin:auto;
+	box-shadow: 0 0 8px #D0D0D0;
+	-webkit-box-shadow: 0 0 8px #D0D0D0;
+}
+
+ul#slide_ordem{
+	/*margin-left:20px;*/
+	margin-top:0px;
+	padding:5px;
+	margin-bottom:0;
+}
+
+#area_logo{
+	margin-left:-5px;
+	margin-top:-16px;
+	background:#fff;
+	padding:5px;
+	border-radius:0 0 10px 10px;
+	border:solid 1px #406791;
+}
+
+#rodape_slides{
+	position:absolute;
+	height:70px;
+	background: #2e3a44; 
+	bottom:0;
+	width:100%;	
+}
+
+/*
+#rodape_slides #logos{
+	position:absolute;
+	left:0;
+	top:0;
+	background:#fff;
+	height:78px;
+	border:solid 1px #2e3a44;
+}
+
+#rodape_slides #logos img{
+	height:85px;
+}
+*/
+
+#rodape_slides #logo_master{
+	padding:5px;
+	background:#fff;
+	/*-webkit-box-shadow: 2px 3px 6px 0px rgba(129, 129, 129, 0.99);
+	-moz-box-shadow:    2px 3px 6px 0px rgba(129, 129, 129, 0.99);
+	box-shadow:         2px 3px 6px 0px rgba(129, 129, 129, 0.99);*/
+	text-align:center;
+	font-size:20px;
+	position:absolute;
+	right:0;
+	width:180px;
+	height:60px;	
+}
+
+#rodape_slides #logo_imobiliaria{
+	padding:5px;
+	background:#fff;
+	/*-webkit-box-shadow: 2px 3px 6px 0px rgba(129, 129, 129, 0.99);
+	-moz-box-shadow:    2px 3px 6px 0px rgba(129, 129, 129, 0.99);
+	box-shadow:         2px 3px 6px 0px rgba(129, 129, 129, 0.99);*/
+	text-align:center;
+	font-size:16px;	
+	float:left;	
+	width:180px;
+	height:60px;
+}
+.logo_rodape{
+	width:100%;
+	height:100%;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+
+#hora_atual{
+	width:120px;
+	font-size:25px;
+	text-align:center;
+	color:#fff;
+	padding:25px 0 0 10px;
+	float:left;
+	margin-right:30px;
+}
+#hora_atual .segundos{
+	font-size:20px;
+}
+
+#rodape_slides #logo_master img, #rodape_slides #logo_imobiliaria img{
+	height:86px;
+}
+
+#area_previsao_tempo{
+	width:40%;
+	margin:auto;
+	/*background:#fff;*/
+	padding:2px;
+	border-radius:0px 0px 7px 7px;
+	z-index:10000;	
+	position:absolute;
+	top:0;
+}
+#area_previsao_tempo .cidade{
+	font-size:16px;
+	/*width:100%;*/
+	margin:3px 40px 5px 0;
+	color:#fff;
+	font-size:1em;
+	float:left;
+	/*border-bottom:solid 1px #e5e7f2;*/
+	text-align:right;
+}
+#area_previsao_tempo ul.previsao_tempo{
+	padding:0;
+	margin:0;
+	float:right;
+}
+#area_previsao_tempo ul.previsao_tempo li{
+	float:left;
+	margin:0 7px 0 7px;
+	list-style:none;
+	font-size:16px;
+}
+#area_previsao_tempo ul.previsao_tempo .icone{
+	float:left;
+	margin:0 5px 0 0px;
+}
+#area_previsao_tempo ul.previsao_tempo .icone img{
+	width:30px;
+	margin-left:10px;
+}
+#area_previsao_tempo ul.previsao_tempo .dia_semana{
+	/*float:left;*/
+	color:#fff;
+	font-size:16px;
+	padding:5px 0 0 20px;
+}
+#area_previsao_tempo ul.previsao_tempo .info{
+	float:left;
+	padding-top:5px;
+	padding-left:5px;
+}
+#area_previsao_tempo ul.previsao_tempo .info .max{
+	float:left;
+	margin-right:5px;
+	color:#fff;
+	font-size:30px
+}
+#area_previsao_tempo ul.previsao_tempo .info .min{
+	float:left;
+	/*color:#3276ab;*/
+	color:#cfcfcf;
+	font-size:25px
+}
+#area_previsao_tempo .fonte{
+	font-size:11px;
+	color:#2e3a44;
+}
+#area_previsao_tempo .fonte a{
+	color:#2e3a44;
+}
+
+.clear{
+	clear:both;
+}
+
+.img_imovel{
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	border:solid 3px #fff;*/
+	float:left;
+	margin-right:20px;	
+	width:40%;
+}
+.content_imovel{
+	float:left;	
+	width:55%;
+}
+.titulo_imovel{
+	/*background:#f7a020;*/
+	background:#fff;
+	color:#f7a020;
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	padding:4px;
+	width:100%;
+	font-weight:bold;
+	margin-bottom:5px;
+	font-size:1.7em;
+}
+.cidade_imovel{
+	background:#fff;
+	color:#105673;
+	/*background:#91a7af;
+	-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	padding:0 8px 0 0;
+	width:100%;
+	margin-bottom:5px;
+	font-size:1.5em;
+}
+.content_imovel .right{
+	float:left;
+}
+.cidade_imovel .tipo_imovel{
+	float:left;
+	margin-right:10px;
+	background:#fff;
+	color:#105673;
+	width:40%;
+}
+.endereco_imovel{
+	background:#fff;
+	color:#105673;
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	padding:4px;
+	width:100%;
+	margin-bottom:5px;
+	font-size:0.8em;
+}
+.transacao{
+	background:#a62b1b;
+	padding:4px;
+	color:#fff;	
+	position:absolute;
+	font-size:2.1em;
+}
+.valor_imovel{
+	background:#fff;
+	color:#324d59;
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	width:100%;
+	margin-bottom:5px;
+	padding:0 8px 0 0;
+}
+.valor_imovel .titulo_valor{
+	float:left;
+	margin-right:10px;	
+	width:20%;
+	font-weight:bold;
+}
+.codigo_imovel{
+	background:#fff;
+	color:#324d59;
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	width:100%;
+	margin-bottom:5px;
+	padding:0 8px 0 0;
+}
+.codigo_imovel .titulo_codigo{
+	float:left;
+	margin-right:10px;
+	background:#fff;
+	width:20%;
+	font-weight:bold;
+}
+.dorms{
+	background:#fff;
+	color:#324d59;
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	width:100%;
+	margin-bottom:5px;
+	padding:0 8px 0 0;
+}
+.dorms .titulo_dorms{
+	float:left;
+	margin-right:10px;
+	padding:4px;
+	width:20%;
+	font-weight:bold;
+}
+.descricao_imovel{
+	background:#fff;
+	color:#324d59;
+	/*-webkit-box-shadow: 2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px 2px 3px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px 2px 3px 0px rgba(50, 50, 50, 0.75);*/
+	padding:4px;
+	width:100%;
+	margin-bottom:5px;
+	font-size:0.7em;
+	line-height: 150%;
+}
+.box-transp {
+	opacity:0.8;
+	filter: alpha(opacity = 80);
+	position:absolute;
+	background-color:#fff;
+	top:0px;
+	z-index:99999;
+}
+.loading {
+	width:400px;
+	height:352px;
+	background:url(../images/loading.gif) no-repeat;
+	margin:auto;
+}

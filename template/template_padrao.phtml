@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TESTE MVC</title>
+	
+	<link href="<?php echo PATH; ?>assets/css/style.css" rel="stylesheet">
+	<link href="<?php echo PATH; ?>assets/css/bootstrap.css" rel="stylesheet">
+	<link href="<?php echo PATH; ?>assets/css/docs.css" rel="stylesheet">
+	<link href="<?php echo PATH; ?>assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="<?php echo PATH; ?>assets/css/bootswatch.css" rel="stylesheet">
+	
+	<script src="<?php echo PATH; ?>assets/js/jquery-1.9.1.js"></script>
+	<script src="<?php echo PATH; ?>assets/js/bootstrap.js"></script>
+	<script src="<?php echo PATH; ?>assets/js/bootswatch.js"></script>
+	
+	<script src="<?php echo PATH; ?>assets/js/bootstrap-validator.js"></script>
+	<script src="<?php echo PATH; ?>assets/js/jquery.maskedinput.min.js"></script>
+	<script src="<?php echo PATH; ?>assets/js/jquery.maskMoney.min.js"></script>
+	<script src="<?php echo PATH; ?>assets/js/bootstrap-select.js"></script>	
+	<script src="<?php echo PATH; ?>assets/js/functions.js"></script>	
+
+	<script src="<?php echo PATH; ?>assets/js/angular/angular.min.js"></script>
+	<script>
+	var path = '<?php echo PATH?>';
+	</script>
+</head>
+<body ng-app="myApp">
+
+<div id="container">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="<?php echo PATH?>admin">
+    	<strong>TESTE MVC</strong>
+    </a>
+  </div>
+  <div class="navbar-collapse navbar-inverse-collapse collapse" style="height: 1px;">
+    <ul class="nav navbar-nav">
+    	<?php
+    	$menu = unserialize(MENU_TOPO);
+    	foreach($menu as $key=>$val){?>
+		<li><a href="<?php echo $val['link']?>"><?php echo $val['titulo']?></a></li>
+    	<?php }?>
+    </ul>    
+  </div>
+</div>
+
+<?php require $content?>
+
+</div>
+
+	<!-- Modules -->
+    <script src="<?php echo PATH; ?>assets/js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="<?php echo PATH; ?>assets/js/controllers/MainController.js"></script>
+
+</body>
+</html>
